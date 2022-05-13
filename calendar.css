@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+}
+body {
+    width: 1200px;
+    height: 840px;
+    margin: 20px auto;
+}
+main {
+    font-family: sans-serif;
+    font-size: 16px;
+    border: 1px dashed darkgrey;
+    border-radius: 1px;
+}
+main > div {
+    height: 92%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+.year {
+    height: 5%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color:rgba(20, 30, 90, 0.8);
+    border-bottom: 1px dotted darkgrey;
+}
+.month {
+    width: 24%;
+    height: 32%;
+}
+.month-name {
+    height: 20%;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(20, 30, 90, 0.8);
+    color: white;
+}
+.days {
+    height: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color:rgb(100, 150, 235, 0.25);
+}
+.days-of-week {
+    padding: 10px;
+    height: 10%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: rgba(100, 150, 235, 0.8);
+    color: white;
+    column-gap: 5px;
+}
+.dates {
+    padding: 10px;
+    height: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+span {
+    width: 12%;
+    height: 14%;
+    text-align: center;
+}
+.dates span {
+    background-color: rgb(255, 255, 255);
+}
+.dates span:nth-child(7n+1), 
+.dates span:nth-child(7n) {
+    color:rgba(100, 150, 235, 0.8);
+}
